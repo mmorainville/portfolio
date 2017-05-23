@@ -1,0 +1,31 @@
+.c-button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+
+  &--white {
+    border: 1px solid $white;
+    color: $darkgrey;
+    background-color: $white;
+
+    &:hover {
+      color: $white;
+      background-color: transparentize($darkgrey, 0.1);
+    }
+  }
+
+  &--outline-white {
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      color: $darkgrey;
+      background-color: $white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.c-sidebar {
+  background-color: $darkblue;
+  color: $white;
+  text-align: center;
+
+  &__header {
+    padding: 2rem;
+    position: relative;
+    background: linear-gradient(transparentize($darkblue, 0.5), transparentize($darkblue, 0.1)), url("https://cdnb.artstation.com/p/assets/images/images/002/631/481/large/mathieu-morainville-20160430t2317-1080.jpg?1463866399");
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

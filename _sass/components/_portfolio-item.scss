@@ -1,0 +1,94 @@
+.c-portfolio-item {
+  background: $grey;
+  display: flex;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background: darken($grey, 5%);
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+  }
+
+  &--first {
+    &:before {
+      top: 1.5rem;
+    }
+  }
+
+  &--last {
+    flex: 1;
+  }
+
+  &__information {
+    flex: 0 0 24rem;
+    color: $darkgrey;
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    flex: 1;
+    background-color: $white;
+    margin: 0;
+    position: relative;
+
+    img {
+      margin: 0;
+      max-width: 100%;
+      display: block;
+    }
+
+    figcaption {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-color: transparentize($black, 0.5);
+      display: flex;
+      opacity: 0;
+      transition: opacity 0.35s;
+
+      .c-portfolio-item__image-caption {
+        margin: auto;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__date {
+    color: $black;
+    margin-top: 0;
+    order: -1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      border: 2px solid $grey;
+      background: $red;
+      left: calc(1rem - 0.3rem);
+      top: 1.25rem;
+    }
+  }
+
+  &__meta {
+    color: $black;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

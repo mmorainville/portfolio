@@ -1,0 +1,28 @@
+<article class="c-portfolio-item{% if forloop.first == true %} c-portfolio-item--first{% elsif forloop.last == true %} c-portfolio-item--last{% else %}{% endif %}">
+  <header class="c-portfolio-item__information">
+    <h3 class="c-portfolio-item__name">{{ include.post.title | escape }}</h3>
+
+    {% assign date_format = site.minima.date_format | default: "%Y/%m/%d" %}
+    <h4 class="c-portfolio-item__date">{{ include.post.date | date: date_format }}</h4>
+
+    <p class="c-portfolio-item__description">
+      {{ include.post.content }}
+    </p>
+
+    <!--<div class="c-portfolio-item__meta">
+        <p><strong>Client:</strong> Despreneur</p>
+        <p><strong>Tags:</strong> Web Design</p>
+    </div>-->
+  </header>
+
+  <figure class="c-portfolio-item__image">
+    <img src="{{ include.post.image }}" alt="{{ include.post.title }}"/>
+    <figcaption>
+      <p class="c-portfolio-item__image-caption">
+        <a href="{{ include.post.image }}" class="c-button c-button--white">Real size</a>
+        <a href="{{ include.post.link }}" target="_blank" class="c-button c-button--white">GitHub</a>
+        <a href="{{ include.post.url | relative_url }}" class="c-button c-button--white">Details</a>
+      </p>
+    </figcaption>
+  </figure>
+</article>

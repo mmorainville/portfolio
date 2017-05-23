@@ -1,0 +1,75 @@
+.c-menu {
+  text-align: left;
+
+  &__item {
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+    position: relative;
+    z-index: 0;
+
+    @mixin menus-transition-effect($color) {
+      color: $color;
+      background-color: transparentize($color, 0.9);
+      transition: color 0.2s;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: transparentize($color, 0.1);
+        content: "";
+        transition: transform 0.2s;
+        transform: translateX(-100%);
+      }
+
+      &:hover::before {
+        transform: translateX(0);
+      }
+
+      &:hover {
+        color: $white;
+        transition: color 0.2s;
+      }
+    }
+
+    &--red {
+      @include menus-transition-effect($red);
+    }
+
+    &--green {
+      @include menus-transition-effect($green);
+    }
+
+    &--blue {
+      @include menus-transition-effect($blue);
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+    margin: 0;
+
+    li {
+      a {
+        display: block;
+        padding: 1rem;
+        color: transparentize($white, 0.5);
+        text-decoration: none;
+
+        &:hover {
+          box-shadow: 0 0 0.25em 0 transparentize($black, 0.125) inset;
+          color: $white;
+          background-color: transparentize($black, 0.5);
+        }
+      }
+    }
+  }
+}

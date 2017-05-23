@@ -1,0 +1,11 @@
+body {
+    font-family: $base-font-family;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+pre {
+    overflow: auto;
+}

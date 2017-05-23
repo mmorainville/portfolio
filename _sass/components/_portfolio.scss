@@ -1,0 +1,15 @@
+.c-portfolio {
+  display: flex;
+  flex: 1;
+
+  &__sidebar {
+    flex: 0 0 24rem;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}

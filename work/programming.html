@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+{% assign filtered_posts = site.posts | where: "categories","programming" %}
+{% for post in filtered_posts %}
+{% include portfolio-item.html post=post %}
+{% endfor %}

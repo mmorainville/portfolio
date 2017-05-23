@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Pour plus d'informations à mon propos, vous pouvez consulter les liens suivants :
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+- [LinkedIn](https://www.linkedin.com/in/mathieu-morainville-4b72757a){:target="_blank"}
+- [GitHub](https://github.com/mmorainville){:target="_blank"}
+- [Shaarli](http://www.hando.org/SERVICES/shaarli/){:target="_blank"}
+- [DeviantART](http://eligius57.deviantart.com/){:target="_blank"}
+- [ArtStation](https://www.artstation.com/artist/eligius){:target="_blank"}

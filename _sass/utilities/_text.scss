@@ -1,0 +1,7 @@
+.u-text-muted {
+  color: $darkgrey !important;
+
+  &--white {
+    color: transparentize($white, 0.5) !important;
+  }
+}
