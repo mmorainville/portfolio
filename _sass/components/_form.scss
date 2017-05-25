@@ -1,0 +1,52 @@
+.c-form {
+  .c-textfield {
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  .c-textfield__input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+
+    &:focus {
+      transition-duration: 0.2s;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
+
+    &:required:invalid, &:focus:invalid {
+      border-bottom-color: $red;
+    }
+  }
+
+  .c-textfield__label {
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+
+    &--floating {
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .c-textfield__input:focus + .c-textfield__label--floating {
+    font-size: 75%;
+  }
+}

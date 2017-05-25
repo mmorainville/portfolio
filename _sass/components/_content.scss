@@ -45,4 +45,12 @@
   a {
     color: $blue;
   }
+
+  @include media-query($on-palm) {
+    margin-left: 0;
+
+    &:after {
+      content: normal;
+    }
+  }
 }

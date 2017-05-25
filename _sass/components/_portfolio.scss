@@ -12,4 +12,8 @@
     flex-direction: column;
     position: relative;
   }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
 }

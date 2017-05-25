@@ -4,15 +4,21 @@ title: Contact
 permalink: /contact/
 ---
 
-<form action="https://formspree.io/mathieumorainville+portfolio@gmail.com" method="POST">
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name">
+<form class="c-form" action="https://formspree.io/mathieumorainville+portfolio@gmail.com" method="POST">
+  <div class="c-textfield">
+    <input class="c-textfield__input" type="text" id="name" name="name" required>
+    <label class="c-textfield__label c-textfield__label--floating" for="name">Name</label>
+  </div>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="_replyto">
+  <div class="c-textfield">
+    <input class="c-textfield__input" type="email" id="email" name="_replyto" required>
+    <label class="c-textfield__label c-textfield__label--floating" for="email">Email</label>
+  </div>
 
-  <label for="message">Message</label>
-  <textarea id="message" rows="5"></textarea>
+  <div class="c-textfield">
+    <textarea class="c-textfield__input" id="message" rows="10" required></textarea>
+    <label class="c-textfield__label c-textfield__label--floating" for="message">Message</label>
+  </div>
 
-  <input type="submit" value="Envoyer">
+  <input class="c-button c-button--outline-primary" type="submit" value="Envoyer">
 </form>

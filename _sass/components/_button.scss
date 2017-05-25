@@ -22,10 +22,22 @@
   &--outline-white {
     border: 1px solid $white;
     color: $white;
+    background-color: transparent;
 
     &:hover {
       color: $darkgrey;
       background-color: $white;
+    }
+  }
+
+  &--outline-primary {
+    border: 1px solid $blue;
+    color: $blue;
+    background-color: transparent;
+
+    &:hover {
+      color: $white;
+      background-color: $blue;
     }
   }
 }

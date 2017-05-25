@@ -91,4 +91,8 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
 }
