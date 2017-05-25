@@ -19,9 +19,9 @@
     <img src="{{ include.post.image }}" alt="{{ include.post.title }}"/>
     <figcaption>
       <p class="c-portfolio-item__image-caption">
-        <a href="{{ include.post.image }}" class="c-button c-button--white">Real size</a>
-        <a href="{{ include.post.link }}" target="_blank" class="c-button c-button--white">GitHub</a>
-        <a href="{{ include.post.url | relative_url }}" class="c-button c-button--white">Details</a>
+        {% if include.post.image %}<a href="{{ include.post.image }}" class="c-button c-button--white">Real size</a>{% endif %}
+        {% if include.post.link.type %}<a href="{{ include.post.link.url }}" target="_blank" class="c-button c-button--white">{{ include.post.link.type }}</a>{% endif %}
+        <!--{% if include.post.url %}<a href="{{ include.post.url | relative_url }}" class="c-button c-button&#45;&#45;white">Details</a>{% endif %}-->
       </p>
     </figcaption>
   </figure>

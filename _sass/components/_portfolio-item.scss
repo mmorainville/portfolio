@@ -60,6 +60,11 @@
 
       .c-portfolio-item__image-caption {
         margin: auto;
+        text-align: center;
+
+        a {
+          margin: 0.5rem;
+        }
       }
 
       &:hover {

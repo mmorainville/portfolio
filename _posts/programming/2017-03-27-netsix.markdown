@@ -4,7 +4,9 @@ title: "Netsix"
 date: 2017-03-27 11:30:00 +0200
 categories: programming
 
-link: https://github.com/pulsardev/netsix
+link:
+  type: GitHub
+  url: https://github.com/pulsardev/netsix
 image: https://raw.githubusercontent.com/mmorainville/netsix/master/screenshot.png
 ---
 Netsix permet de partager ses fichiers vidéos avec des amis en peer-to-peer à l'aide de WebRTC.
