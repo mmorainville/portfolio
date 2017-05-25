@@ -46,7 +46,7 @@
     color: $blue;
   }
 
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     margin-left: 0;
 
     &:after {

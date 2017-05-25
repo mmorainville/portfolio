@@ -40,7 +40,10 @@
     img {
       margin: 0;
       max-width: 100%;
+      min-height: 100%;
       display: block;
+      object-fit: cover;
+      object-position: 0 0;
     }
 
     figcaption {
@@ -92,7 +95,7 @@
     }
   }
 
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     flex-direction: column;
   }
 }
