@@ -1,22 +1,22 @@
 <aside class="c-portfolio__sidebar c-sidebar">
   <div class="c-sidebar__header">
-    <a href="{{ '/' | relative_url }}"><img src="/assets/imgs/128.jpg" alt="Mathieu Morainville" class="c-avatar"></a>
+    <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/imgs/128.jpg' | prepend: site.baseurl }}" alt="Mathieu Morainville" class="c-avatar"></a>
     <h1>Mathieu Morainville</h1>
     <p class="u-text-muted u-text-muted--white">Programmeur et designer <br> Basé à Nancy, France.</p>
-    <a href="/assets/resources/20151228-CV-fr.pdf" class="c-button c-button--outline-white"><i class="fa fa-download"></i>&nbsp;Curriculum vitæ</a>
+    <a href="{{ '/assets/resources/20151228-CV-fr.pdf' | prepend: site.baseurl }}" class="c-button c-button--outline-white"><i class="fa fa-download"></i>&nbsp;Curriculum vitæ</a>
   </div>
   <nav class="c-menu">
     <h3 class="c-menu__item c-menu__item--red"><i class="fa fa-file fa-fw"></i>Portfolio</h3>
     <ul>
-      <li><a href="/work/programming.html">Programmation</a></li>
-      <li><a href="/work/drawings.html">Dessins</a></li>
+      <li><a href="{{ '/work/programming.html' | prepend: site.baseurl }}">Programmation</a></li>
+      <li><a href="{{ '/work/drawings.html' | prepend: site.baseurl }}">Dessins</a></li>
       <!--<li><a href="#">Branding</a></li>
       <li><a href="#">Photography</a></li>
       <li><a href="#">Print</a></li>
       <li><a href="#">Mobile Design</a></li>-->
     </ul>
 
-    <a href="/about/"><h3 class="c-menu__item c-menu__item--green"><i class="fa fa-user fa-fw"></i>À propos</h3></a>
+    <a href="{{ '/about/' | prepend: site.baseurl }}"><h3 class="c-menu__item c-menu__item--green"><i class="fa fa-user fa-fw"></i>À propos</h3></a>
     <!--<ul>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Experience</a></li>
@@ -26,7 +26,7 @@
         <li><a href="#">Blog</a></li>
     </ul>-->
 
-    <a href="/contact/"><h3 class="c-menu__item c-menu__item--blue"><i class="fa fa-envelope fa-fw"></i>Contact</h3></a>
+    <a href="{{ '/contact/' | prepend: site.baseurl }}"><h3 class="c-menu__item c-menu__item--blue"><i class="fa fa-envelope fa-fw"></i>Contact</h3></a>
     <!--<ul>
         <li><a href="#">Address</a></li>
         <li><a href="#">Phone</a></li>

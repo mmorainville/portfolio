@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign filtered_posts = site.posts | where: "categories","drawings" %}
+{% assign filtered_posts = site.posts | where: "categories", "drawings" %}
 {% for post in filtered_posts %}
 {% include portfolio-item.html post=post %}
 {% endfor %}
